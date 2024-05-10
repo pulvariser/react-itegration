@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: sub;
+  src: url("../fonts/AlexBrush-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media all {
+  body.printView,
+  body.printView:before,
+  body.printView:after {
+    border: none !important;
+  }
+
+  body,
+  html {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    
+  }
+  body .login{
+    width: 60%;
+    background-color: #f05654;
+    padding :20px;
+    z-index: 10;
+     position: absolute;
+     top: 0;
+     left:10%;
+
+   
+ }
+
+ 
+
+  .certificate-wrapper {
+    width: 297mm;
+    height: 210mm;
+    line-height: normal;
+    margin: 0 auto;
+    margin-top: 10%;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0mm 70mm;
+
+    position: relative;
+  }
+
+  .certificate-wrapper .certificate-background {
+    width: 297mm;
+    height: 210mm;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .certificate-wrapper .certificate-content .title {
+    text-transform: uppercase;
+    font-size: 14mm;
+    font-weight: 600;
+    position: absolute;
+    top: 20mm;
+    left: 110mm;
+  }
+
+  .certificate-wrapper .certificate-content .sr-no {
+    position: absolute;
+    top: 50mm;
+    left: 60mm;
+  }
+  .certificate-wrapper .certificate-content .date {
+    position: absolute;
+    top: 50mm;
+    right: 60mm;
+  }
+
+  .certificate-wrapper .certificate-content .subtitle {
+    line-height: 8mm;
+    text-transform: uppercase;
+    font-size: x-large;
+    position: absolute;
+    left: 125mm;
+    top: 40mm;
+  }
+
+  .certificate-wrapper .certificate-content .certificate-logo img {
+    position: absolute;
+    left: 10mm;
+    width: 50mm;
+    top: 0;
+  }
+
+  .certificate-wrapper .certificate-content .initial-content {
+    text-align: center;
+    font-size: x-large;
+    position: absolute;
+    left: 90mm;
+    top: 60mm;
+  }
+
+  .certificate-wrapper .certificate-content .candidate-name {
+    font-family: sub;
+    font-size: 15mm;
+    font-weight: bold;
+    position: absolute;
+    left: 100mm;
+    top: 72mm;
+    color: #ee0979;
+    color: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+    color: linear-gradient(to right, #ff6a00, #ee0979);
+  }
+
+  .certificate-wrapper .certificate-content .main-content {
+    text-align: center;
+    font-size: x-large;
+    position: absolute;
+    left: 75mm;
+    top: 90mm;
+  }
+
+  .certificate-wrapper .certificate-content .sign-president-img {
+    width: 29mm;
+    position: absolute;
+    left: 100mm;
+    top: 130mm;
+  }
+  .certificate-wrapper .certificate-content .sign-president {
+    position: absolute;
+    left: 90mm;
+    top: 140mm;
+    z-index: 1;
+  }
+  .certificate-wrapper .certificate-content .sign-director-img {
+    width: 20mm;
+    position: absolute;
+    left: 175mm;
+    top: 124mm;
+  }
+  .certificate-wrapper .certificate-content .sign-director {
+    position: absolute;
+    left: 162mm;
+    top: 140mm;
+    z-index: 1;
+  }
+
+  .certificate-wrapper .certificate-content .org-logo img {
+    width: 40mm;
+    position: absolute;
+    left: 60mm;
+    top: 146mm;
+  }
+  .certificate-wrapper .certificate-content .org-name {
+    font-family: sub;
+    font-size: 9mm;
+    position: absolute;
+    font-weight: bolder;
+    left: 105mm;
+    top: 159mm;
+    color: #ee0979; /* fallback for old browsers */
+    color: -webkit-linear-gradient(
+      to right,
+      #ff6a00,
+      #ee0979
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(
+      to right,
+      #ff6a00,
+      #ee0979
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .certificate-wrapper .certificate-content .org-address {
+    text-align: center;
+    position: absolute;
+    left: 90mm;
+    top: 175mm;
+  }
+
+  /* certifiacte background */
+
+  .certificate-wrapper .certificate-background .square1 {
+    background-color: #f05654;
+    position: absolute;
+    transform: skew(35deg);
+    width: 15mm;
+    height: 30mm;
+    right: 13mm;
+    top: 0;
+  }
+  .certificate-wrapper .certificate-background .square2 {
+    background-color: #545454;
+    position: absolute;
+    transform: skew(35deg);
+    width: 40mm;
+    height: 30mm;
+    right: -26mm;
+    top: 0;
+  }
+  .certificate-wrapper .certificate-background .square3 {
+    background-color: #cbccce;
+    position: absolute;
+    transform: skew(35deg);
+    width: 50mm;
+    height: 30mm;
+    right: -42.5mm;
+    top: 29mm;
+  }
+
+  .certificate-background .square4 {
+    background-color: #f05654;
+
+    position: absolute;
+    transform: rotate(45deg);
+    width: 80mm;
+    height: 80mm;
+    left: -60mm;
+    bottom: -4mm;
+  }
+  .certificate-wrapper .certificate-background .square5 {
+    background-color: #545454dc;
+    position: absolute;
+    transform: skew(45deg);
+    width: 60mm;
+    height: 90mm;
+    left: -65mm;
+    bottom: 0mm;
+  }
+  .certificate-wrapper .certificate-background .square6 {
+    background: #8e9eab;
+    background: -webkit-linear-gradient(to right, #ffffff, #f4f1f1);
+    background: linear-gradient(to right, #ffffff, #f5f2f2);
+
+    position: absolute;
+    transform: rotate(45deg);
+    width: 80mm;
+    height: 80mm;
+    left: -48mm;
+    bottom: -3mm;
+  }
+
+  .certificate-wrapper .certificate-background .square7 {
+    background: #8e9eab61;
+    background: -webkit-linear-gradient(to right, #ffffff33, #f4f1f1);
+    background: linear-gradient(to right, #ffffff32, #f5f2f2);
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120mm;
+    height: 70mm;
+    right: -80mm;
+    top: 30mm;
+  }
+
+  .certificate-wrapper .certificate-background .square8 {
+    background: #4a5d6ca7;
+
+    background: -webkit-linear-gradient(to right, #d6cdcdb7, #f4f1f1);
+    background: linear-gradient(to right, #dcd2d2a5, #f5f2f2);
+    position: absolute;
+    /* background-color: yellow; */
+    transform: skew(-135deg);
+    width: 34mm;
+    height: 38mm;
+    left: 21mm;
+    bottom: 0mm;
+  }
+}
+
+
